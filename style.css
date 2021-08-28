@@ -1,0 +1,19 @@
+.total-score{
+    min-height: 400px;
+}
+
+
+.progress-bar-wrapper{
+    margin: 50px 0 0 0;
+}
+.team-patch{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 100%;
+}
+
+/*
+.total-score-bars{
+    transform: rotate(-90deg) translateX(-60px);
+}
