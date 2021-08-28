@@ -14,8 +14,10 @@
   </head>
   <body>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     <!-- Scripts -->
     <scripts src=""></scripts>
@@ -31,43 +33,99 @@
         <div class="row">
             <div class="col-8 bg-dark text-light">
                 <!-- sekce druzin -->
-                <h3> Kanata </h3>
-        
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <ul>
-                    <li><b>Cip</b>: Navigator  </li>
-                    <li><b>Myval</b> </li>
-                    <li>...</li>
-                </ul>
+                
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="la-tab" data-toggle="tab" href="#tabLa" role="tab" aria-controls="tabLa" aria-selected="true">Lasičky</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="je-tab" data-toggle="tab" href="#tabJe" role="tab" aria-controls="tabJe" aria-selected="false">Ještěrky</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="ka-tab" data-toggle="tab" href="#tabKa" role="tab" aria-controls="tabKa" aria-selected="false">Káňata</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="li-tab" data-toggle="tab" href="#tabLi" role="tab" aria-controls="tabLi" aria-selected="false">Lišáci</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tabLa" role="tabpanel" aria-labelledby="la-tab">
+                        <h3 class="team-header">Lasičky</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <ul class="team-members">
+                            <li><b>Cip</b>: Navigator  </li>
+                            <li><b>Myval</b> </li>
+                            <li>...</li>
+                        </ul> 
+                    </div>
+                    <div class="tab-pane fade" id="tabJe" role="tabpanel" aria-labelledby="je-tab">
+                        <h3 class="team-header">Ještěrky</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <ul class="team-members">
+                            <li><b>Cip</b>: Navigator  </li>
+                            <li><b>Myval</b> </li>
+                            <li>...</li>
+                        </ul> 
+                    </div>
+                    <div class="tab-pane fade" id="tabKa" role="tabpanel" aria-labelledby="ka-tab">
+                        <h3 class="team-header">Káňata</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <ul class="team-members">
+                            <li><b>Cip</b>: Navigator  </li>
+                            <li><b>Myval</b> </li>
+                            <li>...</li>
+                        </ul> 
+                    </div>
+                        
+                    <div class="tab-pane fade" id="tabLi" role="tabpanel" aria-labelledby="li-tab">
+                        <h3 class="team-header">Lišáci</h3>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <ul class="team-members">
+                            <li><b>Cip</b>: Navigator  </li>
+                            <li><b>Myval</b> </li>
+                            <li>...</li>
+                        </ul> 
+                    </div>
+                  </div>    
             </div>
+            
 
             <div class="col-4 bg-dark total-score">
                 <!-- Total skore -->
-                <ul class="total-score-bars">
-                    <div class="progress-bar-wrapper" style="display: table-cell;">
-                        <div class="team-patch"></div>
+                <div class="total-score-bars">
+                    <div class="progress-bar-wrapper">
+                        <div class="team-patch" id="la"></div>
                         <div class="progress total-score-bar">
-                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="progress-bar-wrapper">
+                        <div class="team-patch" id="je"></div>
                         <div class="progress total-score-bar">
-                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="progress-bar-wrapper">
+                        <div class="team-patch" id="ka"></div>
                         <div class="progress total-score-bar">
-                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="progress-bar-wrapper">
+                        <div class="team-patch" id="li"></div>
                         <div class="progress total-score-bar">
                             <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                </ul>
+                </div>
             </div>
         </div>
     
