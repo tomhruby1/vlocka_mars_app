@@ -52,16 +52,16 @@ function updateSigninStatus(isSignedIn) {
     signoutButton.style.display = 'block';
 
     clearNode("la-members")
-    readData('Lasičky!A2:E3', "la");
+    readData('Lasičky!A2:E4', "la");
 
     clearNode("je-members")
-    readData('Ještěrky!A2:E2', "je");
+    readData('Ještěrky!A2:E3', "je");
 
     clearNode("ka-members")
-    readData('Káňata!A2:E7', "ka");
+    readData('Káňata!A2:E8', "ka");
 
     clearNode("li-members")
-    readData('Lišáci!A2:E2', "li");
+    readData('Lišáci!A2:E3', "li");
 
   } else {
     authorizeButton.style.display = 'block';

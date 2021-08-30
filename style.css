@@ -51,3 +51,7 @@
     transform: rotate(-90deg) translateX(-60px);
 }
 
+.header{
+    padding: 25px 0px 25px 0px;
+}
+
