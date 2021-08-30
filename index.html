@@ -52,9 +52,9 @@
                     <div class="tab-pane fade show active" id="tabLa" role="tabpanel" aria-labelledby="la-tab">
                         <h3 class="team-header">Lasičky</h3>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div id="la-team-score" class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <ul class="team-members">
+                        <ul class="team-members" id="la-members">
                             <li><b>Cip</b>: Navigator  </li>
                             <li><b>Myval</b> </li>
                             <li>...</li>
@@ -63,9 +63,9 @@
                     <div class="tab-pane fade" id="tabJe" role="tabpanel" aria-labelledby="je-tab">
                         <h3 class="team-header">Ještěrky</h3>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div id="je-team-score" class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <ul class="team-members">
+                        <ul class="team-members" id="je-members">
                             <li><b>Cip</b>: Navigator  </li>
                             <li><b>Myval</b> </li>
                             <li>...</li>
@@ -74,9 +74,9 @@
                     <div class="tab-pane fade" id="tabKa" role="tabpanel" aria-labelledby="ka-tab">
                         <h3 class="team-header">Káňata</h3>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div id="ka-team-score" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <ul class="team-members">
+                        <ul class="team-members" id="ka-members">
                             <li><b>Cip</b>: Navigator  </li>
                             <li><b>Myval</b> </li>
                             <li>...</li>
@@ -86,9 +86,9 @@
                     <div class="tab-pane fade" id="tabLi" role="tabpanel" aria-labelledby="li-tab">
                         <h3 class="team-header">Lišáci</h3>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div id="li-team-score" class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <ul class="team-members">
+                        <ul class="team-members" id="li-members">
                             <li><b>Cip</b>: Navigator  </li>
                             <li><b>Myval</b> </li>
                             <li>...</li>
@@ -104,31 +104,44 @@
                     <div class="progress-bar-wrapper">
                         <div class="team-patch" id="la"></div>
                         <div class="progress total-score-bar">
-                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div id="la-team-score2" class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="progress-bar-wrapper">
                         <div class="team-patch" id="je"></div>
                         <div class="progress total-score-bar">
-                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div id="je-team-score2" class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="progress-bar-wrapper">
                         <div class="team-patch" id="ka"></div>
                         <div class="progress total-score-bar">
-                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div id="ka-team-score2" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="progress-bar-wrapper">
                         <div class="team-patch" id="li"></div>
                         <div class="progress total-score-bar">
-                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div id="li-team-score2" class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     
-  </div>
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+    <script src="js/loadData.js"></script>
+    <script src="js/authorization.js"></script>
+    </div>
+
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+
   </body>
 </html>
