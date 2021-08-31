@@ -6,8 +6,11 @@
     margin-top: 50px;
 }
 
+.progress{
+    padding: 0px;
+}
 .progress-bar-wrapper{
-    margin: 80px 0 0 0;
+    margin: 40px 0 0 0;
     position: relative;
 }
 .team-header{
@@ -17,13 +20,13 @@
     margin-top: 20px;
 }
 .team-patch{
-    width: 80px;
-    height: 80px;
+    width: 125px;
+    height: 125px;
     background-color: grey;
     border-radius: 100%;
-    position: absolute;
+    /*position: absolute;
     top: -30px;
-    left: -30px;
+    left: -30px;*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
