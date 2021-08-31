@@ -27,7 +27,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transform: rotate(90deg);
 }
 
 .team-patch#la{
@@ -48,17 +47,52 @@
 }
 
 
-.total-score-bars{
-    /*margin-top: 150px;*/
-    transform: rotate(-90deg) translateX(-100px);
-    
-}
-
 .header{    
     padding: 25px 0px 25px 0px;
 }
 
-.team-members > table:hover{
-    background-color: #fafafa;
+body{
+    /*background: rgb(255,84,53);
+    background: linear-gradient(0deg, rgba(255,84,53,1) 0%, rgba(204,30,44,1) 25%, rgba(116,22,48,1) 50%, rgba(64,21,42,1) 75%, rgba(36,23,33,1) 100%); */
+    background-color: #562932;
+    
 }
 
+.sect{
+    padding: 50px 0px 50px 0px;
+    margin: 50px 0px 50px 0px;
+    background-color: #cacaca;
+}
+
+#timer{
+    background-color: #635F60;
+}
+
+#total-score{
+    background-color: #847D7F;
+}
+
+#druziny-score{
+    background-color: #C2BABC;
+}
+
+.table-bordered {
+    border-color:  #807a7b !important;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+    border-color: #807a7b !important;
+    color: #444142;
+}
+
+.progress-bar{
+    background-color: cadetblue;
+}
+
+.nav-link{
+    color: #444142;
+}
