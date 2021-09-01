@@ -35,8 +35,15 @@ function initClient() {
 
     // Handle the initial sign-in state.
     updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+    if(!gapi.auth2.getAuthInstance().isSignedIn.get()){
+      gapi.auth2.getAuthInstance().signIn();
+    }
+    // only for test purposes
+    authorizeButton.style.display = 'none';
+    signoutButton.style.display = 'none';
     authorizeButton.onclick = handleAuthClick;
     signoutButton.onclick = handleSignoutClick;
+    //
   }, function(error) {
     appendPre(JSON.stringify(error, null, 2));
   });
@@ -52,16 +59,16 @@ function updateSigninStatus(isSignedIn) {
     signoutButton.style.display = 'block';
 
     clearNode("la-members")
-    readData('Lasičky!A2:E4', "la");
+    readData('Lasičky!A2:J4', "la");
 
     clearNode("je-members")
-    readData('Ještěrky!A2:E3', "je");
+    readData('Ještěrky!A2:J3', "je");
 
     clearNode("ka-members")
-    readData('Káňata!A2:E8', "ka");
+    readData('Káňata!A2:J8', "ka");
 
     clearNode("li-members")
-    readData('Lišáci!A2:E3', "li");
+    readData('Lišáci!A2:J3', "li");
 
   } else {
     authorizeButton.style.display = 'block';

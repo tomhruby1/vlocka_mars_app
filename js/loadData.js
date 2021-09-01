@@ -1,8 +1,8 @@
 
-var max_score = 141;
-var max_dovednosti = 130;
-var max_stezka = 10;
-var max_odborky = 1;
+var max_score = 0;
+var max_dovednosti = 0;
+var max_stezka = 0;
+var max_odborky = 0;
 
 function addMember(id, row, no){
     var members = document.getElementById(id);
@@ -103,21 +103,27 @@ function readData(range, druzina) {
       range: range,
     }).then(function(response) {
       var range = response.result;
-      teamScore(druzina + "-team-score", range);
-      teamScore(druzina + "-team-score2", range);
+      
       if (range.values.length > 0) {
 
-        /*max_score = 0;
+        
+        max_score = 0;
         var last_row = range.values[range.values.length - 1]
         for (let i = 1; i < last_row.length; i++) {
           max_score += parseInt(last_row[i]);
         }
-        console.log(max_score);*/
+        max_stezka = parseInt(last_row[1]);
+        max_odborky = parseInt(last_row[2]);
+        max_dovednosti = max_score-max_stezka-max_odborky;
 
+
+        teamScore(druzina + "-team-score", range);
+        teamScore(druzina + "-team-score2", range);
         for (i = 0; i < range.values.length-1; i++) {
           var row = range.values[i];
           addMember(druzina + "-members", row, i+1);
         }
+        
 
       } else {
         appendPre('No data found.');
