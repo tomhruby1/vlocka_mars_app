@@ -79,19 +79,26 @@ body{
 #timer{
     background-color: #b1afb0;
 }
-
-#news{
-    background-color: #cacaca;
+*/
+#news, #total-score{
+    margin: 0px;
 }
 
-#total-score{
-    background-color: #c2bebf;
-}
 
+/*
 #druziny-score{
     background-color: #e1dcde;
 }
 */
+#mars{
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+
+}
+#mars img{
+    width: 50%;
+}
 .article{
     padding: 10px;
 }
