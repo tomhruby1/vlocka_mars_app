@@ -11,8 +11,9 @@
     background-color: #cbd1d5;
 }
 .progress-bar-wrapper{
-    margin: 40px 0 0 0;
-    position: relative;
+   /* margin: 40px 0 0 0;
+    position: relative;*/
+    margin: 0px auto;
 }
 .team-header{
     margin-top: 10px;
@@ -21,10 +22,11 @@
     margin-top: 20px;
 }
 .team-patch{
-    width: 125px;
-    height: 125px;
+    width: 200px;
+    height: 200px;
     background-color: grey;
     border-radius: 100%;
+    margin-bottom: 30px;
     /*position: absolute;
     top: -30px;
     left: -30px;*/
@@ -46,9 +48,10 @@
     background-image: url("assets/patch-li.png");
 }
 
+/*
 .total-score-bar{
     margin-left: 55px;
-}
+}*/
 
 
 .header{    
