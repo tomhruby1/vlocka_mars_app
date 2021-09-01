@@ -56,12 +56,13 @@
 
 .header{    
     padding: 25px 0px 25px 0px;
+    margin-bottom: 50px;
 }
 
 body{
     /*background: rgb(255,84,53);
     background: linear-gradient(0deg, rgba(255,84,53,1) 0%, rgba(204,30,44,1) 25%, rgba(116,22,48,1) 50%, rgba(64,21,42,1) 75%, rgba(36,23,33,1) 100%); */
-    background-color: #741630;
+    background-color: #9e2a2b;
 }
 
 .sect{
@@ -83,25 +84,40 @@ body{
     background-color: #b1afb0;
 }
 */
-#news, #total-score{
+#news, #total-score, #timer{
     margin: 0px;
 }
 
 
-/*
-#druziny-score{
-    background-color: #e1dcde;
-}
-*/
 #mars{
     background-color: black;
     padding: 0px;
     margin: 0px;
-
 }
 #mars img{
     width: 50%;
 }
+#mars2{
+    background-color: #412407;
+    padding: 0px;
+    margin: 0px;
+
+      /* The image used */
+    background-image: url("assets/mars2.png");
+
+    /* Set a specific height */ 
+    min-height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mars2 img{
+    width: 100%;
+}
+
 .article{
     padding: 10px;
 }
