@@ -26,18 +26,56 @@
     <!-- CONTENT -->
     <div class="header text-white">
         <center>
-            <img src="assets/logo.png" style="width: 200px;">
-            <h1 style="display: inline;"><b> Vločka na Mars 2022 </b></h1>
+            <table>
+                <tr>
+                    <td><img src="assets/logo.png" style="width: 200px;"></td>
+                    <td>
+                        <h1 style="display: inline;"><b> Vločka na Mars 2022 </b></h1><br>
+                        <h3 style="display: inline;"> První skautská výprava na Mars </h3>
+                    </td>
+                </tr>
+            </table>
+            
         </center>
     </div>
 
-    <section id="timer" class="sect text-white">
-        <center><h2>T-<b id="countdown">23:41:12:01</b></h2></center>
+    <section id="timer" class="sect">
+        <div class="container-lg">
+            <h1>Start výpravy</h1>
+            <center><h2>T-<b id="countdown">23:41:12:01</b></h2></center>
+        </div>
     </section>
 
-    <section id="total-score" class="sect text-white">
+    <section id="news" class="sect">
+        <div class="container-lg">
+            <h1>Novinky</h1>
+            <div class="news-container">
+                <div class="row">
+                    <div class="article col-sm">
+                        <h3>Začátek výcviku</h3>
+                        <p>Dne 6. 9. 2021 začíná officiální výcvik kadetů přihlášených na výpravu na Mars.</p>
+                        <p>Kadeti budou muset během roku demostrovat potřebné dovednosti a schopnosti k účasti na této výpravě. 
+                            Výraznou výhodou může být získání některé z odborností popsaných <a href="https://odborky.skaut.cz/">zde</a>.</p>
+                    </div>
+                    <div class="col-sm article">
+                        <h3>Výprava na Mars</h3>
+                        <p>Na vesmírné radě oddílu Vločka dne 28. 8. 2022 bylo rozhodnuto o letu na Mars, který se uskuteční během července následujícího roku. 
+                            Pro tuto výprovu bude potřeba četná skupina schopných účastníků. Nábor bude otevřen v blízké době.
+                        </p>
+                    </div>
+                    <div class="col-sm article">
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="total-score" class="sect">
         <!-- Total skore -->
         <div class="total-score-bars container-lg">
+            <h1>Celkový postup skupin</h1>
             <div class="progress-bar-wrapper row">
                 <div class="team-patch" id="la"></div>
                 <div class="progress total-score-bar w-75 my-auto">
@@ -65,9 +103,10 @@
         </div>
     </section>
 
-    <section id="druziny-score" class="sect text-white">
+    <section id="druziny-score" class="sect">
         <!-- sekce druzin -->
         <div class="container-lg">
+            <h1>Postup jednotlivých účastníků</h1>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="la-tab" data-toggle="tab" href="#tabLa" role="tab" aria-controls="tabLa" aria-selected="true">Lasičky</a>

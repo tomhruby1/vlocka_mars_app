@@ -8,6 +8,7 @@
 
 .progress{
     padding: 0px;
+    background-color: #cbd1d5;
 }
 .progress-bar-wrapper{
     margin: 40px 0 0 0;
@@ -57,30 +58,49 @@
 body{
     /*background: rgb(255,84,53);
     background: linear-gradient(0deg, rgba(255,84,53,1) 0%, rgba(204,30,44,1) 25%, rgba(116,22,48,1) 50%, rgba(64,21,42,1) 75%, rgba(36,23,33,1) 100%); */
-    background-color: #562932;
-    
+    background-color: #741630;
 }
 
 .sect{
     padding: 50px 0px 50px 0px;
     margin: 50px 0px 50px 0px;
+    background-color: #e5e8ea;   
+    color: #2f4858;
+}
+
+.sect h1{
+    margin-bottom: 50px;
+    border-bottom: 1px #2f4858 solid;
+}
+.sect h3{
+    border-bottom: 1px #2f4858 dotted;
+}
+/*
+#timer{
+    background-color: #b1afb0;
+}
+
+#news{
     background-color: #cacaca;
 }
 
-#timer{
-    background-color: #635F60;
-}
-
 #total-score{
-    background-color: #847D7F;
+    background-color: #c2bebf;
 }
 
 #druziny-score{
-    background-color: #C2BABC;
+    background-color: #e1dcde;
+}
+*/
+.article{
+    padding: 10px;
+}
+.article:hover{
+    background-color: #cbd1d5;
 }
 
 .table-bordered {
-    border-color:  #807a7b !important;
+    border-color:  #cbd1d5 !important;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -88,8 +108,8 @@ body{
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-    border-color: #807a7b !important;
-    color: #444142;
+    border-color: #cbd1d5 !important;
+    color: #2f4858;
 }
 
 .progress-bar{
@@ -97,5 +117,5 @@ body{
 }
 
 .nav-link{
-    color: #444142;
+    color: #2f4858;
 }
