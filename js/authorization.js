@@ -39,8 +39,8 @@ function initClient() {
       gapi.auth2.getAuthInstance().signIn();
     }
     // only for test purposes
-    authorizeButton.style.display = 'none';
-    signoutButton.style.display = 'none';
+    /*authorizeButton.style.display = 'none';
+    signoutButton.style.display = 'none';*/
     authorizeButton.onclick = handleAuthClick;
     signoutButton.onclick = handleSignoutClick;
     //
@@ -59,16 +59,16 @@ function updateSigninStatus(isSignedIn) {
     signoutButton.style.display = 'block';
 
     clearNode("la-members")
-    readData('Lasičky!A2:J4', "la");
+    readData('Lasičky!A2:J14', "la");
 
     clearNode("je-members")
-    readData('Ještěrky!A2:J3', "je");
+    readData('Ještěrky!A2:J8', "je");
 
     clearNode("ka-members")
-    readData('Káňata!A2:J8', "ka");
+    readData('Káňata!A2:J11', "ka");
 
     clearNode("li-members")
-    readData('Lišáci!A2:J3', "li");
+    readData('Lišáci!A2:J8', "li");
 
   } else {
     authorizeButton.style.display = 'block';
