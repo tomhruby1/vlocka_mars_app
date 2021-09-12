@@ -37,6 +37,7 @@
             </table>
             
         </center>
+        
     </div>
 
     <section id="timer" class="sect">
@@ -52,6 +53,38 @@
         <div class="container-lg">
             <h1>Novinky</h1>
             <div class="news-container">
+
+                <div class="row">
+                    <div class="article col-sm">
+                        <h3><b>První úkol</b></h3>
+                        <p>Váš první úkol, který zašlete do konce měsíce, bude jednoduchý. Vytvořte pro všechny členy své družiny nápadité fotky s kosmickou tématikou a zašlete nám je. Budou použity jako profilové fotky na stránkách mise. Hodně štěstí a nebojte se nás překvapit nápaditostí.</p>
+                    </div>
+                    <div class="article col-sm">
+                        <h3>Začátek výcviku a první úkol</h3>
+                        <p>Jménem všech pracovníků týmu Vločka na Mars vás tímto zdravím kadeti. Jak už možná víte byly jste vybráni z řad běžného obyvatelstva, aby jste se vydali na naši první kolonizační misi na Mars.</p>
+                        <p>Abychom zjistily, jak jste na tom, tak budete podrobeni zkouškám ve většině známých oborech. Navíc vám během měsíců budou zaslány další speciální úkoly. Počítejte s tím a pravidelně tak kontrolujte webové stránky pro jakékoliv novinky.</p>
+                    </div>
+
+                    <div class="article col-sm">
+                        <h3>Zobrazení postupu</h3>
+                        <div>
+                            <p>
+                                Aby jste mohli sledovat váš postup ve vícviku a postup vašich kolegů, je potřeba provést authorizaci této vebové aplikace.
+                                Pokud se vám při zobrazení této webové stránky nezobrazila tabulka žádající o váš přístup, stikněte prosím následující tlačítko (Authorize).
+                                Při potvrzování tabulky je potřeba přihlásit se přes gmail, který jste nahlásili vedoucímu mise a je potřeba potvrdit všechny možnosti o které aplikace žádá.
+                            </p>
+                            <!--Add buttons to initiate auth sequence and sign out-->
+                            
+                            <center>
+                                <button id="authorize_button" style="display: none;">Authorize</button>
+                                <button id="signout_button" style="display: none;">Sign Out</button>
+                            </center>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
                 <div class="row">
                     <div class="article col-sm">
                         <h3>Začátek výcviku</h3>
@@ -59,16 +92,18 @@
                         <p>Kadeti budou muset během roku demostrovat potřebné dovednosti a schopnosti k účasti na této výpravě. 
                             Výraznou výhodou může být získání některé z odborností popsaných <a href="https://odborky.skaut.cz/">zde</a>.</p>
                     </div>
+
                     <div class="col-sm article">
                         <h3>Výprava na Mars</h3>
                         <p>Na vesmírné radě oddílu Vločka dne 28. 8. 2022 bylo rozhodnuto o letu na Mars, který se uskuteční během července následujícího roku. 
                             Pro tuto výprovu bude potřeba četná skupina schopných účastníků. Nábor bude otevřen v blízké době.
                         </p>
                     </div>
+
                     <div class="col-sm article">
-                        
                     </div>
                 </div>
+
             </div>
             
         </div>
@@ -180,9 +215,7 @@
     
 
     
-    <!--Add buttons to initiate auth sequence and sign out-->
-    <button id="authorize_button" style="display: none;">Authorize</button>
-    <button id="signout_button" style="display: none;">Sign Out</button>
+    
 
     <pre id="content" style="white-space: pre-wrap;"></pre>
     <script src="js/loadData.js"></script>
